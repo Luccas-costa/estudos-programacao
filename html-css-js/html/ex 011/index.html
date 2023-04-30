@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em hTML5
+    </title>
+</head>
+<body>
+    <H1>imagens dinamicas</H1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador
+    </p>
+
+    <picture> <!--tem que ser sempre do menor para o maior sendo que o maior tem que ficar sempre em cima -->
+        <source media="(max-width: 750px)" srcset="#" type="image/"> <!--se for manor que 750px ele vai carregar a imagem P-->
+        <source media="(max-width: 1050px)" srcset="#" type="image/"> <!--se for menor que 1050px ele vai carregar a imagem M-->
+        <img src="#" alt="imagem G">
+    </picture>
+
+    <h1>reproduzindo audio</h1>
+    <audio src="midia/audiomp3.mp3" controls autoplay></audio>
+    <!--compativel com MP3 WAV OGG -->
+                                                                     <!--maneira 1 em cima funciona +/- o de baixo funciona smp-->
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/audiomp3.mp3" type="audio/mpeg">
+        <source src="midia/audiomp3.mp3" type="audio/ogg">
+        <source src="midia/audiomp3.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador nao consegue reproduzir audio </p>
+    </audio>
+
+</body>
+</html>
